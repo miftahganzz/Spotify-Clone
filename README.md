@@ -1,7 +1,7 @@
-# Spotify Search & Download Website
+# Spotify Simple Clone Website
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/miftahganzz/Spotify-Website/main/assets/IMG-20240504-WA0023.jpg" alt="Spotify Screen Shot">
+  <img src="https://raw.githubusercontent.com/miftahganzz/Spotify-Clone/main/IMG-20240512-WA0097.png" alt="Spotify Screen Shot">
 </p>
 
 <p align="center">
@@ -10,10 +10,11 @@
 
 ## Introduction
 
-Easily find and download your favorite music via the Spotify Search & Download website. Designed with Tailwind CSS for a responsive display, this site uses the REST API to retrieve
+Spotify Clone is a web application that emulates Spotify to search, play and enjoy music online. Using Tailwind Css and Bootstrap Framework, with Rest Api to retrieve Data.
 
 ## Tech & Tools
-<p align="left"> <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/tailwind-css-icon.png" alt="tailwind" width="40" height="40"/>
+<p align="left"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/>
+<img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/tailwind-css-icon.png" alt="tailwind" width="40" height="40"/>
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> 
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/>
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> </p>
