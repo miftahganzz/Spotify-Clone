@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <meta name="description" content="Spotify Clone is a web application that allows users to search, play, and enjoy music online.">
+    <meta name="keywords" content="Spotify, Clone, Music, Streaming, Online, Playlist">
+
+    <meta property="og:title" content="Spotify Clone">
+    <meta property="og:description" content="Spotify Clone is a web application that allows users to search, play, and enjoy music online.">
+    <meta property="og:image" content="https://cdn.miftah.biz.id/file/6635257d2d7f6.png">
+    <meta property="og:url" content="https://miftah.me/Spotify-Clone">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="id_ID">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Spotify Clone">
+    <meta name="twitter:description" content="Spotify Clone is a web application that allows users to search, play, and enjoy music online.">
+    <meta name="twitter:image" content="https://cdn.miftah.biz.id/file/6635257d2d7f6.png">
+
+    <link rel="canonical" href="https://miftah.me/Spotify-Clone">
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-800 text-white min-h-screen flex justify-center items-center">
+    <div class="w-full max-w-4xl bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg overflow-hidden shadow-lg">
+        <div class="p-8">
+            <h1 class="text-3xl font-bold text-center text-white flex items-center justify-center mb-6">
+                <img src="https://cdn.miftah.biz.id/file/6635257d2d7f6.png" alt="Spotify Logo"
+                    class="w-8 h-8 mr-2">
+                Spotify Clone
+            </h1>
+            <div class="relative mx-auto max-w-md">
+                <input id="searchInput"
+                    class="w-full px-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:border-indigo-500 text-gray-800 placeholder-gray-500"
+                    placeholder="Search for music...">
+                <div class="absolute top-0 right-0 mt-2 mr-4">
+                    <svg class="w-6 h-6 text-gray-500 cursor-pointer hover:text-purple-500" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor"
+                        viewBox="0 0 24 24" onclick="searchTracks()">
+                        <path d="M20 20l-4.585-4.586M14 10a6 6 0 1 0-12 0 6 6 0 0 0 12 0z"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div id="musicGallery" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-4"></div>
+    </div>
+
+    <div id="trackModal" class="modal fade" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                        onclick="closeModal()"></button>
+                </div>
+                <div class="modal-body" id="modalContent"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="waitModal" class="modal fade" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <p class="mt-2">Please wait...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.3.2/howler.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
